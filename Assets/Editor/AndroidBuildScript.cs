@@ -37,6 +37,7 @@ public class AndroidBuildScript
         if (summary.result == BuildResult.Succeeded)
         {
             Debug.Log("Build succeeded: " + summary.totalSize + " bytes");
+            Debug.Log("[BUILD PATH]" + buildPath);
         }
         else if (summary.result == BuildResult.Failed)
         {
